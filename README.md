@@ -18,31 +18,31 @@ ShelfSafe is a C console application for organizing food and medicine records, c
 ## Screenshots
 
 ### Main Menu
-![ShelfSafe main menu](ss/Screenshot%202026-11-02%20233813.png)
+![ShelfSafe main menu](Screenshot%202026-11-02%20233813.png)
 
 ### 1. Add Food Item
-![Add food item](ss/Screenshot%202026-11-02%20233900.png)
+![Add food item](Screenshot%202026-11-02%20233900.png)
 
 ### 2. View Food Inventory
-![View food inventory](ss/Screenshot%202026-11-02%20233912.png)
+![View food inventory](Screenshot%202026-11-02%20233912.png)
 
 ### 3. Add Medicine
-![Add medicine](ss/Screenshot%202026-11-02%20233950.png)
+![Add medicine](Screenshot%202026-11-02%20233950.png)
 
 ### 4. View Medicines
-![View medicines](ss/Screenshot%202026-11-02%20234004.png)
+![View medicines](Screenshot%202026-11-02%20234004.png)
 
 ### 5. Show Expiry Alerts
-![Expiry alerts](ss/Screenshot%202026-11-02%20234020.png)
+![Expiry alerts](Screenshot%202026-11-02%20234020.png)
 
 ### 6. Add Verified Interaction Reminder
-![Add interaction reminder](ss/Screenshot%202026-11-02%20234115.png)
+![Add interaction reminder](Screenshot%202026-11-02%20234115.png)
 
 ### 7. View Medicine Schedule Notes
-![Medicine schedule notes](ss/Screenshot%202026-11-02%20234130.png)
+![Medicine schedule notes](Screenshot%202026-11-02%20234130.png)
 
 ### 8. View Matching Interaction Reminders
-![Matching interaction reminders](ss/Screenshot%202026-11-02%20234147.png)
+![Matching interaction reminders](Screenshot%202026-11-02%20234147.png)
 
 ## Requirements
 
@@ -80,7 +80,7 @@ gcc -std=c99 -Wall -Wextra ShelfSafe.c -o ShelfSafe
 
 - Data is stored locally in text files created by the program.
 - Keep those data files beside the program if you want to retain your records.
-- The screenshots are saved in the `ss` folder.
+- The screenshots are saved in the repository root.
 
 ## License
 
