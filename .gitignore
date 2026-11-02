@@ -1,0 +1,9 @@
+# Compiled programs and object files
+*.exe
+*.o
+
+# ShelfSafe local data and reports
+food.txt
+medicines.txt
+interaction_notes.txt
+shelfsafe_*.txt
