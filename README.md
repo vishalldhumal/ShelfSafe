@@ -1,19 +1,23 @@
 # ShelfSafe
 
-ShelfSafe is a C console application for organizing food and medicine records, checking expiry dates, and displaying medicine schedule notes. Users can also save interaction reminders they have verified with a doctor or pharmacist.
+**ShelfSafe** is a C console application for keeping track of food and medicines at home. It records quantities and expiry dates, displays medicine schedule notes, and can show user-entered interaction reminders.
+
+## The problem it addresses
+
+Food and medicines can be forgotten in storage, and people may overlook expiry dates or their own schedule notes. ShelfSafe keeps these records together and makes it easier to review them from a simple menu.
 
 ## Features
 
-1. Add a food item with its quantity, unit, and expiry date.
-2. View the food inventory.
-3. Add a medicine with its dose, schedule note, and expiry date.
-4. View saved medicines.
-5. Check for expired items and items expiring soon.
-6. Add a user-verified medicine interaction reminder.
-7. View medicine schedule notes.
-8. View interaction reminders that match medicines in the inventory.
+1. **Add food items** with a name, quantity, unit, and expiry date.
+2. **View the food inventory.**
+3. **Add medicines** with a name, prescribed dose, schedule note, and expiry date.
+4. **View saved medicines.**
+5. **Check expiry dates** and see which items are expired or expiring soon.
+6. **Save a user-verified interaction reminder** for two medicine names.
+7. **View medicine schedule notes.**
+8. **View matching interaction reminders** when both medicine names are in the inventory.
 
-> ShelfSafe displays user-entered reminders. It does not determine whether medicines are safe to combine and does not replace advice from a doctor or pharmacist.
+> Interaction reminders are entered by the user after checking with a doctor or pharmacist. ShelfSafe does not determine whether medicines are safe to combine, recommend doses, or replace professional advice.
 
 ## Screenshots
 
@@ -44,43 +48,68 @@ ShelfSafe is a C console application for organizing food and medicine records, c
 ### 8. View Matching Interaction Reminders
 ![Matching interaction reminders](Screenshot%202026-11-02%20234147.png)
 
-## Requirements
+## How to use
 
-- GCC or another C compiler that supports C99
+1. Start ShelfSafe from a terminal.
+2. Choose an option from the main menu.
+3. Enter item names, quantities, units, and dates when prompted.
+4. Use the expiry option to review items that need attention.
+5. Exit from the menu when finished.
+
+Dates should be entered in `DD-MM-YYYY` format. The program displays schedule notes when requested; it does not send timed notifications.
+
+## Build and run
+
+### Requirements
+
+- GCC or another compiler that supports C99
 - Windows, macOS, or Linux
-
-## Compile and run
 
 Open a terminal in the folder containing `ShelfSafe.c`.
 
-### Windows PowerShell
+#### Windows PowerShell
 
 ```powershell
 gcc -std=c99 -Wall -Wextra -mconsole ShelfSafe.c -o ShelfSafe.exe
 .\ShelfSafe.exe
 ```
 
-### macOS or Linux
+#### macOS or Linux
 
 ```bash
 gcc -std=c99 -Wall -Wextra ShelfSafe.c -o ShelfSafe
 ./ShelfSafe
 ```
 
+## Data storage
+
+ShelfSafe saves records in local text files in the folder where it runs. Keep those files if you want your records to be available the next time you start the program. Do not upload personal medicine or household information to a public repository.
+
 ## C concepts demonstrated
 
-- Structures and arrays
-- Functions
-- Loops and conditional statements
+- Structures for representing food, medicine, and reminder records
+- Arrays for storing multiple records
+- Functions for organizing program features
+- Loops and conditional statements for menus and checks
 - Strings and input handling
-- File handling
+- File handling for saving and loading records
 - Date validation and comparison
 
-## Notes
+## Project structure
 
-- Data is stored locally in text files created by the program.
-- Keep those data files beside the program if you want to retain your records.
-- The screenshots are saved in the repository root.
+```text
+ShelfSafe/
+├── ShelfSafe.c
+├── README.md
+├── .gitignore
+└── Screenshot files
+```
+
+## Limitations
+
+- ShelfSafe is a local, single-user console application; it does not sync data between devices.
+- Schedule entries are notes, not automatic alarms.
+- Interaction reminders are user-entered and are not generated from a medical database.
 
 ## License
 
